@@ -1,0 +1,347 @@
+:root {
+    --color-primary: #ff0000;
+    --color-secundary-ligth: #eb0a93;
+    --color-secondary: #3399ff;
+    --color-primary-ligth: #f7e72b;
+}
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/***********
+    HOME
+***********/
+
+.home{
+    position: relative;
+    background-image: url(img/img1-banner.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+.home .header {
+    padding: 30px 0;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.home .header .nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 20px;
+}
+
+.home .header .nav ul li a:hover {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary)
+}
+
+.home .header .nav ul li .logo {
+    margin: 0 30px;
+    width: 130px;
+}
+
+/****************
+    HOME-BANNER
+*****************/
+
+.home .banner {
+    color: white;
+    text-align: center;
+}
+
+.home .banner span {
+    display: block;
+    text-align: center;
+}
+
+.home .banner h1 {
+    font-size: 130px;
+    color: var(--color-primary);
+    font-weight: bold;
+    box-shadow: 0 0 15px white;
+}
+
+.home .banner .slogan1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: var(--color-primary);
+}
+
+.home .banner img {
+    width: 130px;
+
+}
+
+/************
+    ABOUT
+*************/
+
+.about {
+    height: 100%;
+    background-color: var(--color-primary-ligth);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .timing{
+    width: 33%;
+    background-image: url(img/img2-historia.png);
+    padding: 20px;
+    position: relative;
+    top: -50px;
+    background-repeat: no-repeat;
+}
+
+.about .timing .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 37px;
+}
+
+.about .timing .icon-cut {
+    width: 100px;
+}
+
+.about .timing h3 {
+    text-transform: uppercase;
+    color: grey;
+    width: fit-content;
+    margin: 0 auto 10px auto;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.about .timing .text {
+    margin: 10px 0;
+}
+
+.about .timing .text:after {
+    content: '•';
+    display: block;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after {
+    content: '|';
+
+}
+
+.about .timing .text h4 {
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+}
+.about .timing span {
+    color: white;
+    font-size: 15px;
+    display: block;
+
+}
+
+.about .experience {
+    width:66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 50px;
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2:after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: justify;
+    color: black;
+}
+
+/************
+    SERVICES
+*************/
+
+.services {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-secondary);
+}
+
+.services h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.services .boxes {
+    
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.services .box {
+    border: 3px solid white;
+    padding: 50px 40px;
+    margin: 30px;
+}
+
+.services .box h4 {
+    color: white;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.services .box p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.services .box .cultos {
+   width: 150px;
+}
+
+/*****************
+    APPOINTMENT
+******************/
+
+.appointment {
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    height: 100vh;
+    background-image: url(img/logo-ieq1.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+  }
+  
+  .appointment h2 {
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .appointment img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .appointment p {
+      font-size: 29px;
+      text-align: justify;
+      padding-top: 30px;
+  }
+
+/************
+    LOCATION
+*************/
+
+.location {
+    padding: 100px 0;
+    background: url(img/img4-ieq.png);
+    background-size: cover;
+  }
+  
+  .location .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 40px;
+  }
+  
+.location .head .info {
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 100%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.location .head .info .text span {
+    display: block;
+    font-size: 13px;
+    color: white;
+}
+
+.location .head .info .text span:first-child {
+    color: silver;
+}
+
+.location .head .info .text span:last-child {
+    color: white;
+}
+
+.location .map {
+    width: 100%;
+}
+
+.location .map iframe {
+    width: 100%;
+}
+
+/*********
+* FOOTER
+**********/
+
+.footer {
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
+}
